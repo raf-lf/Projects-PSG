@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gesture: {fileID: 0}
-  flapForce: 400
+  flapForce: 500
   moveForce: 3
   vfxDeath: {fileID: 7926226374788783790, guid: 6ee3336f49f5fb443a3a532c292ba32c, type: 3}
   vfxFlap: {fileID: 7926226374788783790, guid: f348ca894dd02244790f4c28a6c85e6a, type: 3}

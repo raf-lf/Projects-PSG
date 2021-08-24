@@ -73,9 +73,10 @@ public class Birb : MonoBehaviour
     {
         rb.velocity = new Vector2(moveForce, rb.velocity.y);
 
-        if (Input.GetMouseButtonDown(0))
+       /* if (Input.GetMouseButtonDown(0))
         {
             Flap();
         }
+       */
     }
 }
