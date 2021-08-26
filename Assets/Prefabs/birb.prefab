@@ -405,7 +405,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 3625043607559282579, guid: fb347da8351490447b60d3aebeead78a, type: 3}
   m_Color: {r: 0.6320754, g: 0.21764861, b: 0.21764861, a: 1}
   m_FlipX: 0
@@ -487,7 +487,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -2413806693520163455, guid: 4599d714b4da7374491f89e6f3678999, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -601,7 +601,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3625043607559282579, guid: fb347da8351490447b60d3aebeead78a, type: 3}
   m_Color: {r: 1, g: 0.3726415, b: 0.3726415, a: 1}
   m_FlipX: 0
@@ -663,7 +663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gesture: {fileID: 0}
   flapForce: 500
-  moveForce: 3
+  moveForce: 4
   vfxDeath: {fileID: 7926226374788783790, guid: 6ee3336f49f5fb443a3a532c292ba32c, type: 3}
   vfxFlap: {fileID: 7926226374788783790, guid: f348ca894dd02244790f4c28a6c85e6a, type: 3}
 --- !u!50 &6147787092902685302
@@ -982,7 +982,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -2413806693520163455, guid: 4599d714b4da7374491f89e6f3678999, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
