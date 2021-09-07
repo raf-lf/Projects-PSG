@@ -1,20 +1,10 @@
 class SingletonData
 {
-    private static SingletonData Instance;
+    public static SingletonData Instance;
 
     private SingletonData()
     {
 
-    }
-
-    public void Write(string text)
-    {
-
-    }
-
-    public string Read()
-    {
-        return "";
     }
 
     public static SingletonData FindInstance()

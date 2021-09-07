@@ -1,7 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TouchScript.Gestures;
+using UnityEngine;
 
 public class Birb : MonoBehaviour
 {
@@ -28,11 +27,12 @@ public class Birb : MonoBehaviour
         }
 
     }
-    
+
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
     }
 
     private void OnEnable()
@@ -68,10 +68,10 @@ public class Birb : MonoBehaviour
     {
         rb.velocity = new Vector2(moveForce, rb.velocity.y);
 
-       /* if (Input.GetMouseButtonDown(0))
-        {
-            Flap();
-        }
-       */
+        /* if (Input.GetMouseButtonDown(0))
+         {
+             Flap();
+         }
+        */
     }
 }
