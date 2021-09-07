@@ -19,7 +19,7 @@ public class touch : MonoBehaviour
                 touchId = Input.GetTouch(i);
                 Debug.Log("Touch " + i + "at " + Input.GetTouch(i).position);
 
-                Vector3 cameraPosition = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 10);
+                Vector3 cameraPosition = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, -Camera.main.transform.position.z);
 
                 moveableObject.transform.position = Camera.main.ScreenToWorldPoint(cameraPosition);
 

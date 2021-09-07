@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TouchScript.Gestures;
-using UnityEngine.SceneManagement;
 
 public class Birb : MonoBehaviour
 {
@@ -26,16 +25,10 @@ public class Birb : MonoBehaviour
             deathVfx.transform.position = transform.position;
 
             gameObject.SetActive(false);
-            Invoke(nameof(Restart),3);
         }
 
     }
     
-    private void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
-
-    }
 
     private void Start()
     {
@@ -44,29 +37,31 @@ public class Birb : MonoBehaviour
 
     private void OnEnable()
     {
-        gesture.Tapped += Tapped; // Inscreve o objeto
+        gesture.Tapped += Flap; // Inscreve o objeto
     }
 
     private void OnDisable()
     {
-        gesture.Tapped -= Tapped; // Cancela a inscrição o objeto
+        gesture.Tapped -= Flap; // Cancela a inscrição o objeto
 
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Death();
     }
 
-    public void Flap()
+    public void FlapExecute()
     {
         rb.AddForce(Vector2.up * flapForce);
         GameObject flapVfx = Instantiate(vfxFlap);
         flapVfx.transform.position = transform.position;
 
     }
-    public void Tapped(object sender, System.EventArgs e)
+    public void Flap(object sender, System.EventArgs e)
     {
-        Flap();
+        FlapExecute();
+
     }
 
     private void Update()

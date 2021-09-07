@@ -9,9 +9,9 @@ public class Score : MonoBehaviour
     public GameObject[] obstacles = new GameObject[3];
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D hamburguer)
     {
-        if (collision.gameObject.GetComponentInChildren<Birb>())
+        if (hamburguer.gameObject.GetComponentInChildren<Birb>())
         {
             Hud.score++;
             Destroy(transform.parent.gameObject, 10);

@@ -27,7 +27,7 @@ public class swipe : MonoBehaviour
     private void TouchEnd()
     {
         indicatorAnim.SetBool("touching", false);
-        touchStart = GetTouchPosition();
+        touchEnd = GetTouchPosition();
         ExecuteSwipe();
     }
     private void ExecuteSwipe()

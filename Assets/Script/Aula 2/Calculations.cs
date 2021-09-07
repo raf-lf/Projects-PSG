@@ -21,6 +21,7 @@ public static class Calculations
         float distance = midPoint.magnitude;
         direction = midPoint / distance;
         direction.Normalize();
+        Debug.Log(direction);
 
         return direction;
     }
