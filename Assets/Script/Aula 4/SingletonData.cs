@@ -12,4 +12,5 @@ class SingletonData
         if (Instance != null) return Instance;
         else return Instance = new SingletonData();
     }
+
 }

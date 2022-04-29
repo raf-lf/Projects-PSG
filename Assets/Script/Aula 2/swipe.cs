@@ -32,8 +32,6 @@ public class swipe : MonoBehaviour
     }
     private void ExecuteSwipe()
     {
-        //GameObject sparkles = Instantiate(sparklesPrefab);
-        //sparkles.transform.position = transform.position;
 
         direction = Calculations.GetDirectionToTarget(touchStart, touchEnd);
         GetComponent<Rigidbody2D>().velocity = swipeForce * -direction;
@@ -55,11 +53,6 @@ public class swipe : MonoBehaviour
                     break;
             }
 
-           // GetComponent<LineRenderer>().SetPosition(0, transform.position);
-           // GetComponent<LineRenderer>().SetPosition(1, touchScreenTarget);
-
-
-            //transform.position = Camera.main.ScreenToWorldPoint(touchTarget);
 
         }
     }

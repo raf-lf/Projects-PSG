@@ -554,6 +554,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3365395562053557440, guid: e50548173da651d4387d725f8f9b0622, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365395562053557440, guid: e50548173da651d4387d725f8f9b0622, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.69
+      objectReference: {fileID: 0}
     - target: {fileID: 3365395562053557442, guid: e50548173da651d4387d725f8f9b0622, type: 3}
       propertyPath: m_Name
       value: Hud
